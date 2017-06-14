@@ -1,0 +1,492 @@
+$blue-color: #4e26fd;
+$black-color: #ffffff;
+
+@font-face{
+  font-family: 'Bebas'; 
+  src: url("font/BebasNeue-Regular.otf");
+  }
+
+@font-face{
+  font-family: 'Bebas Bold'; 
+  src: url("font/BebasNeue-Bold.otf");
+  font-weight: bold;
+  }
+
+@font-face{
+  font-family: 'OpenSans';
+  src: url("font/OpenSans-Regular.ttf");
+  }
+
+@font-face{
+  font-family: 'OpenSans Bold';
+  src: url("font/OpenSans-Bold.ttf");
+  font-weight: bold;
+  }
+
+ @font-face{
+  font-family: 'OpenSans Light';
+  src: url("font/OpenSans-Light.ttf");
+  font-weight: 900;
+  }
+
+@mixin useBebasfont($font-fam, $lspace){
+    font-family: $font-fam; 
+    letter-spacing: $lspace;
+}
+
+html{
+    font-size: 70%;
+    @media (min-width: 576px) {
+        font-size: 75%;
+    }
+     @media (min-width: 768px) {
+        font-size: 80%;
+    }
+   
+    @media (min-width: 992px) {
+        font-size: 85%;
+    }
+    @media (min-width: 1200px) {
+        font-size: 100%;
+    }
+}
+
+body{
+    //min-width: 100px;
+}
+
+h1, h2{
+    @include useBebasfont('Bebas Bold', 3px);
+}
+h1{   
+    font-size: 5rem;
+    margin: calc( 6rem - 4px ) 0rem calc( 2rem - 12px );
+    text-align: center;
+
+}
+
+h2{    
+    font-size: 3.5rem;
+    margin: calc( 3rem - 1px) 0rem calc( 2rem - 10px);
+    text-align: center;
+}
+
+.card{
+    border-style: none;
+}
+
+.card-title{
+    font-family: OpenSans Bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.card-text{
+     font-family: OpenSans Light;
+     font-size: 17px;
+}
+
+.more-button{
+    @include useBebasfont('Bebas', 1px);
+    font-size: 2rem;
+    margin-top: 1px;
+    padding: 4px 58px;
+    text-transform: uppercase;
+    background-color: white;
+    color: $blue-color;
+    border-color: $blue-color;
+    border-width: 2px;
+    border-radius: 0px;
+}
+
+//header
+
+body {
+  font-family: OpenSans Light;
+  background-color: $black-color;
+}
+
+nav { 
+    background-color: $black-color;
+}
+
+.navbar-main {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    margin-bottom: 1rem;
+}
+
+.navbar-brand {
+    padding-left: 5px;
+    img{
+        max-width: 123px;
+        height: auto;
+    }
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #0f0f0f;
+}
+
+.nav-items {
+    padding-top: 1rem;
+}
+
+
+.nav-item {
+    padding-left: 1.5rem;
+}
+
+.navbar-toggleable-md .navbar-nav .nav-link {
+    @include useBebasfont('Bebas', 2px);
+    font-size: 20px;
+    padding-right: 0px;
+}
+
+.main-banner {
+    margin-bottom: .5rem;
+    width: 100%
+}
+
+.main-banner img{
+    width: 100%;
+}
+
+//search
+
+.search-form {
+    background-color: black;
+    padding: 30px;
+    padding-left: 32px;
+    padding-right: 33px;
+    margin-top: calc( 3rem - 3px );
+
+    input{
+        margin-right: .5rem;
+        border-radius: 0px;
+        }
+
+    button{
+        @include useBebasfont('Bebas', 1px);
+        text-transform: uppercase;
+        border-radius: 0px;
+        }
+
+    .form-control {
+        font-family: 'OpenSans';
+        font-size: 18px;
+        letter-spacing: 1px;
+        padding: 14px 16px;
+        margin-right: 12px;
+    }
+
+    .btn-primary {
+        font-family: Bebas Bold;
+        font-size: 26px;
+        background-color: $blue-color;
+        border-color: $blue-color;
+        border-left-width: 1.5rem;
+        border-right-width: 1.5rem;
+        padding: 0px 14px;
+        padding-top: 14px;
+        padding-bottom: 7px;
+    }  
+}
+.decor-line {
+        margin-bottom: 3rem;
+        hr{
+        height: 4px;
+        background-color:  $blue-color;
+        margin-top: 0px;
+        width: 100%;
+            }
+    }
+
+//award section
+.award-row{
+    margin: 0px -30px;
+   
+}
+
+.award-row  .card {
+    margin-top: 5px;
+    padding: 0px 18px;
+}
+.award-row .card-block{
+    padding: 20px 2px;
+}
+
+ .award-row .card-title{
+    text-align: center;
+    margin-top: calc( 1rem - 4px );
+    margin-bottom: calc( 1rem - 6px );
+}
+.award-row .card-text{
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.award-winning-hotels .more-button{
+
+}
+
+//activities section
+
+.card-activities{
+    padding: 0px;
+}
+.card-img-overlay{
+    padding: 0px;
+    top: auto;
+    
+    .card-title{
+        @include useBebasfont('Bebas Bold', 1px);
+        font-size: 3.5rem;
+        margin-bottom: 1px;
+        text-align: left;
+        margin-left: 2rem;
+    }
+    .card-text{
+        margin-bottom: 1rem;
+        text-align: left;
+        margin-left: 2rem;
+        color: white;
+    }
+}
+.card-img{
+    border-radius: 0px;
+    }
+
+//delux section
+
+.delux h1{
+    margin-top: calc( 6rem - 4px);
+    margin-bottom: calc( 4rem - 5px ); 
+}
+
+  @media (max-width: 767px){
+    .delux .card{
+        margin: 0px;
+    }
+
+  }
+
+.delux-row{
+    margin: 0px -30px;
+}
+
+.large-deluxe-img{
+    margin: 0px -13px;
+}
+
+.card-right{
+    margin-right: 20px;
+}
+
+.card-left{
+    margin-left: 20px;
+}
+
+.delux-row h1{
+    margin-top: 6rem;
+    margin-bottom: calc( 4rem - 9px );
+}
+
+.delux-row .card-block{
+    padding: 14px 2px 12px 2px;
+}
+  @media (max-width: 767px){
+    .delux .card{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+.delux-row .card-title{
+    margin-bottom: 3px;
+}
+.delux-row .card-text{
+    margin-bottom: 13px;
+}
+.delux-row img{
+    width: 100%;
+}
+.large-deluxe-img{
+    .card-block{
+        padding: 25px 2px 8px 5px;
+    }
+}
+
+.delux .more-button{
+    margin-top: 14px;
+}
+
+//feature-hotel section
+
+.feature-hotel{
+    margin-top: 6rem;
+    .row{
+        overflow: hidden;
+        position: relative;
+    }
+}
+.feature-hotel header{
+    @include useBebasfont('Bebas Bold', 7px);
+    font-size: 8rem;
+    line-height: 0.8;
+    margin-top: calc( 7rem - 2px);
+    margin-bottom: calc( 2rem - 12px);
+    text-align: left;
+    color: white;
+}
+
+@media(max-width: 1200px){
+    .feature-hotel header{
+        font-size: 6rem;
+    }
+}
+
+@media(min-width: 1200px){
+    .feature-hotel header{
+        margin-left: 4rem;
+    }
+}
+
+.feature-hotel p{
+    color: white;
+
+    font-size: 18px;
+}
+
+@media(min-width: 1200px){
+    .feature-hotel p{
+        margin-left: 5rem;
+        padding-right: 10rem;
+    }
+}
+
+.feature-hotel .more-button{
+    color: white;
+    margin-left: 5rem;
+    margin-top: calc( 2rem - 12px);
+    background-color: $blue-color;
+    font-size: 19px;
+    padding: 12px 60px;
+    @include useBebasfont('Bebas Bold', 3px);
+}
+
+.winter-text{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 20;
+}
+
+//news section
+
+.news h1{
+    margin-top: calc( 6rem - 7px );
+    margin-bottom: calc( 4rem - 10px);
+    font-size: 7rem;
+    letter-spacing: 4px;
+}
+
+.news-row{
+    margin: 0px -30px;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 767px){
+    .news .card{
+       padding-left: 20px;
+       padding-right: 20px;
+    }
+}
+
+.news .card-block{
+    padding-left: 0px;
+    padding-top: 24px;
+}
+
+.news .more-button{
+    padding: 8px 60px;
+    font-size: 1.5rem;
+}
+
+//footer
+
+footer{
+    margin-top: calc( 5rem - 6px);
+    background-color: #252525;
+    color: white;
+}
+
+.site-menu{
+    @include useBebasfont('Bebas', 1px);
+    margin-top: 6rem;
+    padding-left: 3rem;
+    font-size: 1.2rem;
+}
+
+.site-menu p{
+    margin-bottom: 0.4rem;
+}
+
+.site-menu .row{
+    margin-right: 4rem;
+}
+
+.contacts, .social-networks, .copyright{
+    font-family: OpenSans Light;
+    font-size: 1rem;
+}
+
+.contacts{
+    margin-top: 2rem;
+    padding-left: 5px;   
+}
+@media(min-width: 1200px){
+    padding-left: 0px;
+}
+
+.location, .phone, .mail{
+    padding-left: 10px;
+    padding-top: 16px;
+}
+
+.location{
+    padding-top: 22px;
+}
+
+.social-networks{
+    margin-top: calc( 6rem + 4px);
+    padding-right: 10px;
+    }
+ @media (max-width: 576px){
+      .social-networks{
+            padding-right: 25px;
+            
+      }
+
+  }
+ @media (min-width: 1200px){
+      .social-networks{
+            padding-left: 6rem;
+            .row {
+                padding-right: 1rem;
+            }
+      }
+
+  }
+
+.s-m-icon{
+     padding: 1.2rem 0px;
+     text-align: right;
+}
+ 
+.footer-main-row{
+    margin-bottom: 3rem;
+}
+
+.copyright{
+    margin: auto;
+}

@@ -1,0 +1,333 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Html sample</title>
+
+</head>
+
+
+<body data-spy="scroll" data-target="#navbar-scroll">
+<div class="container">
+        <nav class="navbar navbar-toggleable-md navbar-light navbar-main">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src=<%= require("./images/logo.png") %> class="d-inline-block align-top" alt="">
+            </a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="nav navbar-nav nav-items">
+                    <li class="nav-item">
+                        <a class="nav-link nav1">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="main-banner">
+                <img src=<%= require('./images/main_banner.png') %> />
+        </div>
+    </div>
+</div>
+<div class="container">
+    <section class="search">
+        <form class="form-inline row search-form">
+             <input type="text" class="form-control col-5th" placeholder="Arrival">
+             <input type="text" class="form-control col-5th" placeholder="Departure">
+             <input type="text" class="form-control col-5th" placeholder="Choose a Room">
+             <input type="text" class="form-control col-5th" placeholder="State">
+             <button type="submit" class="btn btn-primary">book now</button>
+
+        </form>
+        <div class="decor-line row">
+             <hr>
+        </div>
+    </section>
+        <section class="award-winning-hotels">
+            <div class="row justify-content-center">
+                <h2>Award winning hotels</h2>
+            </div>
+            <div class="row award-row">
+                    <div class="col-sm-6 col-md-4 card">
+                        <img class="card-img-top" src=<%= require('./images/award/img1.png') %> alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Middle of downtown</h4>
+                            <p class="card-text">We fill the space content. High-quality, beautiful, solid and pleasant to the touch.</p>                      
+                        </div>
+                    </div>        
+                
+                    <div class="col-sm-6 col-md-4 card">
+                        <img class="card-img-top" src=<%= require('./images/award/img2.png') %> alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Great Environment</h4>
+                            <p class="card-text">We fill the space content. High-quality, beautiful, solid and pleasant to the touch.</p>                      
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 card">
+                        <img class="card-img-top" src=<%= require('./images/award/img3.png') %> alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Free Breakfast</h4>
+                            <p class="card-text">We fill the space content. High-quality, beautiful, solid and pleasant to the touch.</p>                      
+                        </div>
+                    </div>
+                                
+                    <div class="col-sm-6 col-md-4 card">
+                        <img class="card-img-top" src=<%= require('./images/award/img4.png') %> alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">We Clean Everyday</h4>
+                            <p class="card-text">We fill the space content. High-quality, beautiful, solid and pleasant to the touch.</p>                      
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 card">
+                        <img class="card-img-top" src=<%= require('./images/award/img5.png') %> alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Enjoy nightlife</h4>
+                            <p class="card-text">We fill the space content. High-quality, beautiful, solid and pleasant to the touch.</p>                      
+                        </div>
+                    </div>          
+                
+                    <div class="col-sm-6 col-md-4 card">
+                        <img class="card-img-top" src=<%= require('./images/award/img6.png') %> alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Meet New People</h4>
+                            <p class="card-text">We fill the space content. High-quality, beautiful, solid and pleasant to the touch.</p>                      
+                        </div>
+                    </div>
+            </div>
+            <div class="row justify-content-center">
+                    <a href="#" class="btn btn-primary btn-lg more-button">more</a>
+            </div>
+        </section>
+</div>
+<section class="winter-activities">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <h1>winter activities</h1>
+        </div>
+        <div class="row">
+            <div class="card card-inverse card-activities col-5th ">
+                <img class="card-img" src=<%= require('./images/activities/sking.png') %>>
+                <div class="card-img-overlay">
+                    <h4 class="card-title">Sking</h4>
+                    <p class="card-text">We fill the space content.<br>High-quality, beautiful, solid and </p>
+                </div>
+            </div>
+            <div class="card card-inverse card-activities col-5th ">
+                <img class="card-img" src=<%= require('./images/activities/boarding.png') %>>
+                <div class="card-img-overlay">
+                    <h4 class="card-title">Boarding</h4>
+                    <p class="card-text">We fill the space content.<br>High-quality, beautiful, solid and </p>
+                </div>
+            </div>            
+            <div class="card card-inverse card-activities col-5th">
+                <img class="card-img" src=<%= require('./images/activities/cycling.png') %>>
+                <div class="card-img-overlay">
+                    <h4 class="card-title">Cycling</h4>
+                    <p class="card-text">We fill the space content.<br>High-quality, beautiful, solid and </p>
+                </div>
+            </div>            
+            <div class="card card-inverse card-activities col-5th">
+                <img class="card-img" src=<%= require('./images/activities/hiking.png') %>>
+                <div class="card-img-overlay">
+                    <h4 class="card-title">Hiking</h4>
+                    <p class="card-text">We fill the space content.<br>High-quality, beautiful, solid and </p>
+                </div>
+            </div>            
+            <div class="card card-inverse card-activities col-5th">
+                <img class="card-img" src=<%= require('./images/activities/trekking.png') %>>
+                <div class="card-img-overlay">
+                    <h4 class="card-title">Trekking</h4>
+                    <p class="card-text">We fill the space content.<br>High-quality, beautiful, solid and </p>
+                </div>
+            </div>            
+        </div>
+    </div>
+</section>
+<section class="delux">
+    <div class="container">
+        <div class="row justify-content-center">
+            <h1>Delux rooms with<br>a beautiful view</h1>
+        </div>
+        <div class="row delux-row">
+            <div class="col-md-3">
+                <div class="card card-right">
+                    <img class="card-img-top" src=<%= require('./images/deluxe/dimg2.png') %> alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Magna pars studiorum</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="card card-right">
+                    <img class="card-img-top" src=<%= require('./images/deluxe/dimg4.png') %> alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Magna pars studiorum</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card large-deluxe-img">
+                    <img class="card-img-top" src=<%= require('./images/deluxe/dimg1.png') %> alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Magna pars studiorum</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Etiam porta sem malesuada magna mollis euismod. Nul id dolor id nibh ultricies vehicula</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card card-left">
+                    <img class="card-img-top" src=<%= require('./images/deluxe/dimg3.png') %> alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Magna pars studiorum</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="card card-left">
+                    <img class="card-img-top" src=<%= require('./images/deluxe/dimg5.png') %> alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Magna pars studiorum</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+            <div class="row justify-content-center">
+                <a href="#" class="btn btn-primary btn-lg more-button">more</a>
+            </div>
+        </div>
+</section>
+
+<section class="feature-hotel">
+    <div class="container-fluid">
+        <div class="row">
+            <img src=<%= require('./images/winter/wimg1.png') %> >
+            <div class="col-sm-12 offset-md-6 col-md-6 winter-text">
+                <header>winter <br>weather</header>
+                <p>We fill the space content. High-quality, beautiful, solid and 
+                    pleasant to the touch. Furniture and decoration of concrete? You to us.</p>
+                <a href="#" class="btn btn-primary btn-lg more-button">more</a>             
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="news">
+    <div class="container">
+    <div class="row justify-content-center">
+        <h1>News From Us</h1>
+    </div>
+    <div class="row news-row">
+        <div class="col-md-4 card">
+            <img class="card-img-top" src=<%= require( './images/news/nimg1.png') %> alt="Card image cap">
+            <div class="card-block">
+                <h4 class="card-title">Sedial eiusmod tempor</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt</p>
+            </div>
+        </div>
+        <div class="col-md-4 card">
+            <img class="card-img-top" src=<%= require( './images/news/nimg2.png') %> alt="Card image cap">
+            <div class="card-block">
+                <h4 class="card-title">Sedial eiusmod tempor</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt</p>
+            </div>
+        </div>
+        <div class="col-md-4 card">
+            <img class="card-img-top" src=<%= require( './images/news/nimg3.png') %> alt="Card image cap">
+            <div class="card-block">
+                <h4 class="card-title">Sedial eiusmod tempor</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt</p>
+            </div>
+        </div>
+    </div>
+     <div class="row justify-content-center">
+                <a href="#" class="btn btn-primary btn-lg more-button">more</a>
+     </div>
+    </div>
+</section>
+<footer>
+    <div class="container"> 
+        <div class="row footer-main-row">
+            <div class="col-6 col-md-4 contacts">
+                    <img class="logo" src=<%= require("./images/footer/logo_footer.png") %>>
+                    <div class="location">
+                        <img src=<%= require("./images/footer/contacts/location.png") %>>
+                        123, Main Street, NY 456789
+                    </div>
+                    <div class="phone">
+                        <img src=<%= require("./images/footer/contacts/phone.png") %>>
+                       +12 345 67890
+                    </div>
+                    <div class="mail">
+                        <img src=<%= require("./images/footer/contacts/mail.png") %>>
+                        free@psdfreebies.com
+                    </div>
+            </div>
+            <div class="col-6 col-md-5 site-menu">
+                <div class="row">
+                    <div class="col">
+                        <p>home</p>
+                        <p>about</p>
+                        <p>rooms</p>
+                    </div>
+                    <div class="col">
+                        <p>portfolio</p>
+                        <p>blog</p>
+                        <p>partnership</p>
+                    </div>
+                    <div class="col">
+                        <p>contact</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 social-networks">
+                <div class="row justify-content-end">
+                    We are in social networks
+                </div>
+                <div class="row">
+                    <div class="col s-m-icon">
+                        <img src=<%= require("./images/footer/social_links/facebook.png") %>>
+                    </div>
+                    <div class="col s-m-icon">
+                        <img src=<%= require("./images/footer/social_links/vk.png") %>>
+                    </div>
+                    <div class="col s-m-icon">
+                        <img src=<%= require("./images/footer/social_links/insta.png") %>>
+                    </div>
+                    <div class="col s-m-icon">
+                        <img src=<%= require("./images/footer/social_links/youtube.png") %>>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row copyright justify-content-center">
+            Copyright 2017. PSDFreebies.com  All Right Reserved 
+        </div>
+    </div>
+
+</footer>
+</body>
+
+</html>

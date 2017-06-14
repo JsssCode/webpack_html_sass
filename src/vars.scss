@@ -1,0 +1,31 @@
+
+
+.col-5th {
+  
+  @include make-col-ready();
+
+    @media (max-width: 250px){
+    @include make-col(12);
+
+  }
+     @media (min-width: 600px){
+    @include make-col(6);
+
+  }
+   @media (min-width: 900px){
+    @include make-col(4);
+
+  }
+
+  @media (min-width: 1200px){
+    @include make-col(2.4);
+
+  }
+
+ 
+ 
+
+
+}
+
+

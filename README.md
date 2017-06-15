@@ -13,7 +13,9 @@ Descriptions:
 PSD to HTML template from https://psdfreebies.com/.
 
 Result:
-- for screen width 1500 using Google Chrome extension PixelPerfect - webpack_html_sass/PixelPerfect1500.png
-- mobile version - webpack_html_sass/mobile version.png
+
+- for screen width 1500 using Google Chrome extension PixelPerfect - https://github.com/NatalyChkhan/webpack_html_sass/blob/master/PixelPerfect1500.png
+
+- mobile version - https://github.com/NatalyChkhan/webpack_html_sass/blob/master/mobile%20version.png
 
 

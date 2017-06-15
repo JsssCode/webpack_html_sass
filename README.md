@@ -10,6 +10,6 @@ Key words:
 - PSD to HTML.
 
 Descriptions:
-https://psdfreebies.com/
+PSD to HTML template from https://psdfreebies.com/.
 
 
